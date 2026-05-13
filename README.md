@@ -84,7 +84,7 @@ int main()
 
 
 ## OUTPUT
-<img width="513" height="441" alt="image" src="https://github.com/user-attachments/assets/cc738181-12fc-4ac0-8a2f-f1aeabcbcb43" />
+<img width="721" height="396" alt="Screenshot 2026-05-13 092913" src="https://github.com/user-attachments/assets/a288ead2-d605-4ea2-bc8c-97f9074603d4" />
 
 
 ## C Program that illustrate communication between two process using named pipes using Linux API system calls
