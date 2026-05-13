@@ -90,6 +90,8 @@ int main()
 ## C Program that illustrate communication between two process using named pipes using Linux API system calls
 
 ```
+Create Writer Program
+
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -117,12 +119,39 @@ int main()
 
     return 0;
 }
+
+Create Reader Program
+
+#include <stdio.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main()
+{
+    int fd;
+    char buffer[100];
+
+    // Open pipe for reading
+    fd = open("mypipe", O_RDONLY);
+
+    // Read message from pipe
+    read(fd, buffer, sizeof(buffer));
+
+    printf("Message Received: %s\n", buffer);
+
+    close(fd);
+
+    return 0;
+}
 ```
 
 
 
+
 ## OUTPUT
-<img width="513" height="441" alt="image" src="https://github.com/user-attachments/assets/389e0cc1-1461-496a-b506-9534f5c070af" />
+<img width="935" height="497" alt="image" src="https://github.com/user-attachments/assets/0ac139ec-a222-4a7e-8bd1-d0e66c9882ed" />
 
 
 # RESULT:
